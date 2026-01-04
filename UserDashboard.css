@@ -1,0 +1,397 @@
+.product-card {
+  position: relative;
+  border-radius: 10px;
+}
+
+.product-image {
+  width: 100%;
+  height: 160px;
+  object-fit: contain; /* 🔥 keeps image perfect */
+  background: #f8f9fa;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Favourite Button */
+.fav-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: white;
+  color: #999;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.fav-btn.active {
+  color: red;
+}
+/* ===== POS NAVBAR ===== */
+.pos-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* LEFT */
+.nav-left .brand {
+  font-size: 20px;
+  color: #2c7be5;
+}
+
+/* CENTER */
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-search {
+  width: 320px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* RIGHT */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-user {
+  font-size: 14px;
+  color: #555;
+}
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-date {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Category Dropdown */
+.nav-category {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background: #fff;
+  cursor: pointer;
+}
+/* ===== QTY BUTTONS ===== */
+.qty-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.qty-box button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #f8f9fa;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.qty-box span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ===== CART BADGE ===== */
+.cart-badge {
+  background: #e7f1ff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.cart-item {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-name {
+  font-weight: 500;
+}
+
+/* INLINE QTY */
+.qty-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-inline button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #f8f9fa;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.qty-inline span {
+  min-width: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.cart-item-price {
+  text-align: right;
+  font-weight: 600;
+  margin-top: 4px;
+}
+.payment-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.payment-modal {
+  background: #fff;
+  padding: 24px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.payment-options {
+  display: flex;
+  gap: 10px;
+}
+
+.pay-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f8f9fa;
+  font-weight: 500;
+}
+
+.pay-btn.active {
+  background: #198754;
+  color: white;
+  border-color: #198754;
+}
+.pos-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.nav-left .brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: #198754;
+}
+
+.nav-center {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-user {
+  font-size: 14px;
+  color: #555;
+}
+
+.cart-badge {
+  background: #e7f1ff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.pos-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.brand { font-size: 20px; font-weight: 700; color: #198754; }
+
+.nav-search, .nav-category, .nav-date {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.cart-badge {
+  background: #e7f1ff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.payment-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-modal {
+  background: white;
+  padding: 24px;
+  width: 360px;
+  border-radius: 12px;
+}
+
+.pay-btn {
+  flex: 1;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.pay-btn.active {
+  background: #198754;
+  color: white;
+}
+.invoice-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+}
+
+.invoice-card {
+  background: #fff;
+  padding: 20px;
+  width: 600px;
+  border-radius: 8px;
+}
+
+.invoice-header {
+  text-align: center;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+}
+
+.invoice-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.invoice-address {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.invoice-total {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.invoice-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+@media print {
+  .invoice-actions {
+    display: none;
+  }
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.product-card {
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.fav-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.fav-btn.active {
+  color: red;
+}
